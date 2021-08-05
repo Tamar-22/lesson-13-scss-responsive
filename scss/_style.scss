@@ -1,0 +1,110 @@
+body{
+    background-color: #f7f8f8;
+}
+.header-cont{
+    @extend %size-container;
+    .header-wrapper{
+        @include d-flex( flex, space-between, center, row);
+        .nav-cont{
+            @include width (500px, 100%);
+            display: block;
+            @media (max-width:768px) {
+                display: none;
+            }
+             .ul{
+                @include d-flex (flex, space-between, none, none);
+                font-size: $fontsize2;  
+                color: $colorpink1;
+                font-weight: $font-weight;
+                &:after {
+                    content: "\f18c";
+                    font-family: Fontawesome;
+                    font-size: $fontsize2;
+                }
+            }
+        }
+        .logo{
+            width: $size1;
+            // @media (max-width:768px) {
+            //     padding-left: 10px;
+            // }
+        }
+    }
+}
+.container1{
+    @extend %size-container;
+    background-color: $colorpink;
+    .cont1-wrapper{
+        @include d-flex (flex,space-between,center,row );
+        @media (max-width:768px) {
+            flex-direction: column;
+            justify-content: center;;
+        }
+        .flower-image{
+            width: $width50;
+            height: $sizeheight1;
+            @include hover(all, 1s, linear, 2s);
+            &:hover{
+                margin-left:$fontsize2;
+            }
+            @media (max-width:768px) {
+                height: auto;
+            }
+        }
+        .cont1-title{
+            font-size: $fontsize1;
+            color: $colorwhite;
+            text-align: center;
+            @include hover (all, 2s, linear, 2s);
+            &:hover{
+                font-size: $fontsize3;
+                color: $colorred;
+            }
+            @media (max-width:768px) {
+                font-size: 20px;
+            }
+            
+        }
+    }
+}
+.container2{
+    @extend %size-container;
+    height: $sizeheight1;
+    padding-top: 20px;
+    .cont2-wrapper{
+        @include d-flex (flex,space-between,center,row);
+        @media (max-width:768px) {
+            flex-direction: column;
+        }
+        .cont2-paragraph{
+            @include width (600px, 100%);
+            font-size: $fontsize2;
+            color: $colorpink1;
+            font-weight: $font-weight;
+            line-height: $fontsize1;
+            text-align: center;
+            &::first-letter{
+                font-size: $fontsize1;
+                color: $colorred;
+            }
+            @media (max-width:768px) {
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+        .cont2-image{
+            width: $width50;
+            height: $sizeheight1;
+            @include hover(all, 1s, linear, 2s);
+            &:hover{
+                margin-right:$fontsize2;
+            }
+            @media (max-width:768px) {
+                height: auto;
+                margin-top: 10px;
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,264 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header-cont, .container1, .container2 {
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f7f8f8;
+}
+
+.header-cont .header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header-cont .header-wrapper .nav-cont {
+  max-width: 500px;
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .header-cont .header-wrapper .nav-cont {
+    display: none;
+  }
+}
+
+.header-cont .header-wrapper .nav-cont .ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  font-size: 30px;
+  color: #ffdbcd;
+  font-weight: bold;
+}
+
+.header-cont .header-wrapper .nav-cont .ul:after {
+  content: "\f18c";
+  font-family: Fontawesome;
+  font-size: 30px;
+}
+
+.header-cont .header-wrapper .logo {
+  width: 150px;
+}
+
+.container1 {
+  background-color: #ffe6ee;
+}
+
+.container1 .cont1-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .container1 .cont1-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.container1 .cont1-wrapper .flower-image {
+  width: 50%;
+  height: 720px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+}
+
+.container1 .cont1-wrapper .flower-image:hover {
+  margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .container1 .cont1-wrapper .flower-image {
+    height: auto;
+  }
+}
+
+.container1 .cont1-wrapper .cont1-title {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+}
+
+.container1 .cont1-wrapper .cont1-title:hover {
+  font-size: 60px;
+  color: #ff6666;
+}
+
+@media (max-width: 768px) {
+  .container1 .cont1-wrapper .cont1-title {
+    font-size: 20px;
+  }
+}
+
+.container2 {
+  height: 720px;
+  padding-top: 20px;
+}
+
+.container2 .cont2-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .container2 .cont2-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.container2 .cont2-wrapper .cont2-paragraph {
+  max-width: 600px;
+  width: 100%;
+  font-size: 30px;
+  color: #ffdbcd;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+}
+
+.container2 .cont2-wrapper .cont2-paragraph::first-letter {
+  font-size: 50px;
+  color: #ff6666;
+}
+
+@media (max-width: 768px) {
+  .container2 .cont2-wrapper .cont2-paragraph {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.container2 .cont2-wrapper .cont2-image {
+  width: 50%;
+  height: 720px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+}
+
+.container2 .cont2-wrapper .cont2-image:hover {
+  margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .container2 .cont2-wrapper .cont2-image {
+    height: auto;
+    margin-top: 10px;
+  }
+}
+/*# sourceMappingURL=global.css.map */
